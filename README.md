@@ -8,7 +8,7 @@
  - [ ] Diseño de nivel
  - [ ] ...cosas
 
-# Como abrrir el juego
+# Como abrrir el juego en Unity
 
  - Clonar el repositorio
  - Abrir Unity Hub
