@@ -29,6 +29,8 @@
 ## Agregar Escaleras:
  - Agregar el sprite de escaleras
  - Dentro del inspector agregar el tag de "Ladder"
+ - Agregar componente BoxColiision2d
+ - Margar la opcion isTrigger dentro de este
 
 ## Como agregar personaje:
  - Arrastrar prefab del personaje al nivel y listo
@@ -38,4 +40,5 @@
  - Arrastrar el personaje a donde dice "Follow"
  - Crear un gameObject vacio
  - Agregar componente PolygonCollision2d
+ - Marcar la opcion isTrigger dentro de este
 
