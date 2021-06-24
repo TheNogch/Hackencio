@@ -1,7 +1,7 @@
 # Hackencio
 Juego para tópico II
 
-Cosa que falta:
+Cosas que faltan:
  - Enemigos
  - Otro Puzzle
  - Diseño de nivel
