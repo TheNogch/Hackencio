@@ -8,7 +8,9 @@ Cosas que faltan:
  - [ ] Diseño de nivel
  - [ ] ...cosas
 
-Como crear nivel:
+# Como agregar elementos al juego
+
+### Como crear nivel:
  - Crear nueva escena
  - Crear nuevo tilemap
  - Usar paleta con tiles
@@ -16,14 +18,14 @@ Como crear nivel:
  - Agregar componente TilemapColission2d
  - Agergar material "resbaloso" (para que no se puedan escalar)
 
-Agregar Escaleras:
+### Agregar Escaleras:
  - Agregar el sprite de escaleras
  - Dentro del inspector agregar el tag de "Ladder"
 
-Como agregar personaje:
+### Como agregar personaje:
  - Arrastrar prefab del personaje al nivel y listo
 
-Agregar movimiento de camara:
+### Agregar movimiento de camara:
  - Crear cinemachine 2d
  - Arrastrar el personaje a donde dice "Follow"
  - Crear un gameObject vacio
