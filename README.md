@@ -30,7 +30,7 @@
  - Agregar el sprite de escaleras
  - Dentro del inspector agregar el tag de "Ladder"
  - Agregar componente BoxColiision2d
- - Margar la opcion isTrigger dentro de este
+ - Marcar la opcion isTrigger dentro de este
 
 ## Como agregar personaje:
  - Arrastrar prefab del personaje al nivel y listo
