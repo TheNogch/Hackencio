@@ -8,6 +8,14 @@
  - [ ] Diseño de nivel
  - [ ] ...cosas
 
+# Como abrrir el juego
+
+ - Clonar el repositorio
+ - Abrir Unity Hub
+ - Añadir nuevo proyecto
+ - Seleccionar carpeta donde se clono el repo
+ - Listo!
+
 # Como agregar elementos al juego
 
 ## Como crear nivel:
