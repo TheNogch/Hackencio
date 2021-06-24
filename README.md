@@ -1,8 +1,8 @@
 # Hackencio
 
-### Juego para tópico II
+## Juego para tópico II
 
-Cosas que faltan:
+### Cosas que faltan:
  - [ ] Enemigos
  - [ ] Otro Puzzle
  - [ ] Diseño de nivel
