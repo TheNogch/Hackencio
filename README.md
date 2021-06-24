@@ -10,8 +10,8 @@
 
 # Como abrrir el juego en Unity
 
- * Clonar el repositorio
- * Abrir Unity Hub
+ - Clonar el repositorio
+ - Abrir Unity Hub
  - Añadir nuevo proyecto
  - Seleccionar carpeta donde se clono el repo
  - Listo!
