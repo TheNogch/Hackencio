@@ -5,3 +5,4 @@ Cosas que faltan:
  - Enemigos
  - Otro Puzzle
  - Diseño de nivel
+ - ...cosas
