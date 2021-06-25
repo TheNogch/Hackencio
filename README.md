@@ -4,6 +4,10 @@
 
 ### Cosas que faltan:
  - [ ] Enemigos
+  - [X] Sprite y animacion de caminar
+  - [X] Script para patrullar
+  - [X] Si toca al jugador es GG
+  - [ ] Perseguir al jugador  
  - [ ] Otro Puzzle
  - [ ] Diseño de nivel
  - [ ] ...cosas
