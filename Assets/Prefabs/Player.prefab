@@ -14,6 +14,9 @@ GameObject:
   - component: {fileID: 1960673501162518399}
   - component: {fileID: 1960673501162518398}
   - component: {fileID: 8456012320837283598}
+  - component: {fileID: 1330126690}
+  - component: {fileID: 1330126691}
+  - component: {fileID: 1330126692}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -169,3 +172,41 @@ MonoBehaviour:
   betterJump: 1
   fallMultiplier: 2
   lowJumpMultiplier: 1
+--- !u!114 &1330126690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960673501162518384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cc487c11ad350a42a584905c31367e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grayGems: 0
+--- !u!114 &1330126691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960673501162518384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61bad0de7161f044e9d336dae743439a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1330126692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960673501162518384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbcc31f55fb88944589d70e608009790, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  miniGame: {fileID: 0}

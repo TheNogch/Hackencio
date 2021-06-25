@@ -11,13 +11,14 @@ public class PlayerMinigame : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F) && canStartMinigame)
         {
+            gameObject.GetComponent<PlayerMovement>().canMove = false;
             miniGame.SetActive(true);
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("miniGame") && InventoryOfPlayer.gems == 4) 
+        if (collision.CompareTag("miniGame") && gameObject.GetComponent<PlayerIventory>().grayGems == 4) 
         {
             canStartMinigame = true;
         }

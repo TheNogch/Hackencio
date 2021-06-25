@@ -11,7 +11,6 @@ public class DeathZoneController : MonoBehaviour
         {
             gameOverMenu.SetActive(true);
 
-            InventoryOfPlayer.gems = 0;
         }
     }
 }

@@ -9,7 +9,9 @@ public class RedGemController : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            Debug.Log(InventoryOfPlayer.gems);
+
+            Debug.Log(collision.gameObject.GetComponent<PlayerIventory>().grayGems);
+            //Debug.Log(InventoryOfPlayer.gems);
         }
     }
 }

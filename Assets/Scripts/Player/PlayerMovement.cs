@@ -21,6 +21,8 @@ public class PlayerMovement : MonoBehaviour
     public float fallMultiplier = 2.0f;
     public float lowJumpMultiplier = 1.0f;
 
+    public bool canMove = true;
+
 
     private void Awake()
     {
@@ -45,47 +47,50 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.velocity = new Vector2(horizontalSpeed * moveSpeed, rb.velocity.y);
+        if (canMove)
+        {
+            rb.velocity = new Vector2(horizontalSpeed * moveSpeed, rb.velocity.y);
 
-        if (horizontalSpeed < 0)
-        {
-            animator.SetBool("Run", true);
-            spriteRenderer.flipX = true;
-        }
-        else if (horizontalSpeed > 0)
-        {
-            animator.SetBool("Run", true);
-            spriteRenderer.flipX = false;
-        }
-        else
-        {
-            animator.SetBool("Run", false);
-        }
-
-        if (Input.GetKey(KeyCode.Space) && isGrounded)
-        {
-            rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
-        }
-
-        if (isGrounded)
-        {
-            animator.SetBool("Jump", false);
-        }
-        else
-        {
-            animator.SetBool("Jump", true);
-            animator.SetBool("Run", false);
-        }
-
-        if (betterJump)
-        {
-            if(rb.velocity.y < 0)
+            if (horizontalSpeed < 0)
             {
-                rb.velocity += (fallMultiplier) * Time.deltaTime * Physics2D.gravity.y * Vector2.up;
+                animator.SetBool("Run", true);
+                spriteRenderer.flipX = true;
             }
-            if(rb.velocity.y > 0 && !Input.GetKey(KeyCode.Space))
+            else if (horizontalSpeed > 0)
             {
-                rb.velocity += (lowJumpMultiplier) * Time.deltaTime * Physics2D.gravity.y * Vector2.up;
+                animator.SetBool("Run", true);
+                spriteRenderer.flipX = false;
+            }
+            else
+            {
+                animator.SetBool("Run", false);
+            }
+
+            if (Input.GetKey(KeyCode.Space) && isGrounded)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
+            }
+
+            if (isGrounded)
+            {
+                animator.SetBool("Jump", false);
+            }
+            else
+            {
+                animator.SetBool("Jump", true);
+                animator.SetBool("Run", false);
+            }
+
+            if (betterJump)
+            {
+                if (rb.velocity.y < 0)
+                {
+                    rb.velocity += (fallMultiplier) * Time.deltaTime * Physics2D.gravity.y * Vector2.up;
+                }
+                if (rb.velocity.y > 0 && !Input.GetKey(KeyCode.Space))
+                {
+                    rb.velocity += (lowJumpMultiplier) * Time.deltaTime * Physics2D.gravity.y * Vector2.up;
+                }
             }
         }
     }

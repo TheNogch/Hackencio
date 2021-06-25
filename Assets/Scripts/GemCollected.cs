@@ -11,9 +11,7 @@ public class GemCollected : MonoBehaviour
         {
             GetComponent<SpriteRenderer>().enabled = false;
 
-            collision.GetComponent<PlayerIventory>().grayGems += 1;
-
-            InventoryOfPlayer.gems += 1;
+            collision.gameObject.GetComponent<PlayerIventory>().grayGems += 1;
 
             Destroy(gameObject);
         }

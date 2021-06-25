@@ -22,6 +22,8 @@ public class MinigameController : MonoBehaviour
 
     private int gemCount;
 
+    public PlayerMovement playerMovement;
+
     private void Awake()
     {
         for (int i = 0; i < Mathf.Pow(nubmerOfButtons, 2); i++)
@@ -44,7 +46,7 @@ public class MinigameController : MonoBehaviour
 
     private void OnEnable()
     {
-        Debug.Log(InventoryOfPlayer.gems);
+        //Debug.Log(InventoryOfPlayer.gems);
         ChangeToYellow();
         countdownText.gameObject.SetActive(true);
         StartCoroutine(Countdown());
@@ -150,6 +152,8 @@ public class MinigameController : MonoBehaviour
             isPlaying = false;
 
             Destroy(wall);
+
+            playerMovement.canMove = true;
 
             gameObject.SetActive(false);
         }
