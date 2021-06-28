@@ -1620,11 +1620,11 @@ MonoBehaviour:
   m_Text: 'para seguir avanzando debes de completar el codigo
 
 
-    Tienes 30 Segundos
+    Tienes 3 intentos,
+    NO FALLES!
 
 
-    Para
-    memorizar el patron y replicarlo'
+    Memoriza el patron y replicalo'
 --- !u!222 &1015192668
 CanvasRenderer:
   m_ObjectHideFlags: 0
