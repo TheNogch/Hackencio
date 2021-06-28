@@ -32,7 +32,7 @@ public class EnemyPatrol : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if(!collision.CompareTag("Player") && !collision.CompareTag("foreground"))
+        if(!collision.CompareTag("Player") && !collision.CompareTag("foreground") && !collision.CompareTag("Ladder"))
         {
             transform.localScale = new Vector2(-transform.localScale.x, transform.localScale.y);
         }

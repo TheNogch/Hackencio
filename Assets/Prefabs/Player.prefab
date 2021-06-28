@@ -172,6 +172,8 @@ MonoBehaviour:
   betterJump: 1
   fallMultiplier: 2
   lowJumpMultiplier: 1
+  canMove: 1
+  isHidden: 0
 --- !u!114 &1330126690
 MonoBehaviour:
   m_ObjectHideFlags: 0
