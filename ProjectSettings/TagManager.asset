@@ -8,6 +8,7 @@ TagManager:
   - pPiece
   - miniGame
   - Enemy
+  - foreground
   layers:
   - Default
   - TransparentFX

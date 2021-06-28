@@ -23,6 +23,8 @@ public class PlayerMovement : MonoBehaviour
 
     public bool canMove = true;
 
+    public bool isHidden = false;
+
 
     private void Awake()
     {
@@ -92,6 +94,22 @@ public class PlayerMovement : MonoBehaviour
                     rb.velocity += (lowJumpMultiplier) * Time.deltaTime * Physics2D.gravity.y * Vector2.up;
                 }
             }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("foreground"))
+        {
+            isHidden = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("foreground"))
+        {
+            isHidden = false;
         }
     }
 }

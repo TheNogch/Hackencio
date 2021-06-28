@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 5463548885769113102}
   - component: {fileID: 5463548885769113103}
   - component: {fileID: 5463548885769113097}
-  - component: {fileID: 5463548885769113096}
   m_Layer: 0
   m_Name: Soldier
   m_TagString: Enemy
@@ -75,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: -3868812660829053132, guid: 643f4a45de5c968499e8c9c8f5f103b9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -166,16 +165,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 3
---- !u!114 &5463548885769113096
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5463548885769113203}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4dbbe7002a298ff4f8e6e0ed1fc50577, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   gameOverMenu: {fileID: 0}

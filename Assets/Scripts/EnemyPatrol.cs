@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyPatrol : MonoBehaviour
 {
     public float moveSpeed = 3.0f;
-
+    public GameObject gameOverMenu;
     Rigidbody2D rb;
 
     private void Awake()
@@ -32,9 +32,20 @@ public class EnemyPatrol : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if(!collision.CompareTag("Player"))
+        if(!collision.CompareTag("Player") && !collision.CompareTag("foreground"))
         {
             transform.localScale = new Vector2(-transform.localScale.x, transform.localScale.y);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            if (!collision.gameObject.GetComponent<PlayerMovement>().isHidden)
+            {
+                gameOverMenu.SetActive(true);
+            }
         }
     }
 
