@@ -5,6 +5,10 @@ using UnityEngine.UI;
 
 public class MinigameController : MonoBehaviour
 {
+    public GameObject miniGameHowToMenu;
+
+    public GameObject gameOverMenu;
+
     public Transform puzzleField;
     public GameObject btn;
     public int nubmerOfButtons;
@@ -23,6 +27,8 @@ public class MinigameController : MonoBehaviour
     private int gemCount;
 
     public PlayerMovement playerMovement;
+
+    private int incorrectGuess = 0;
 
     private void Awake()
     {
@@ -131,7 +137,16 @@ public class MinigameController : MonoBehaviour
             }
             else
             {
-                Debug.Log("HAHA PERDISTE!!!");
+                incorrectGuess += 1;
+                buttonList[index].image.color = Color.red;
+            }
+
+            if (incorrectGuess == 3)
+            {
+                isPlaying = false;
+                playerMovement.canMove = true;
+                gameObject.SetActive(false);
+                gameOverMenu.SetActive(true);
             }
         }
        
@@ -141,8 +156,6 @@ public class MinigameController : MonoBehaviour
     {
         if(correctAnswer.Count <= 0)
         {
-            Debug.Log("COMPLETADO");
-
             foreach (Button btn in buttonList)
             {
                 btn.image.color = new Color32(40, 40, 40, 255);
@@ -159,6 +172,11 @@ public class MinigameController : MonoBehaviour
         }
     }
 
+    public void GotItMenu()
+    {
+        miniGameHowToMenu.SetActive(false);
+        gameObject.SetActive(true);
+    }
 }
 
 
