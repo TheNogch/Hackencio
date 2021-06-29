@@ -10,4 +10,10 @@ public class VictoryMenuController : MonoBehaviour
         Debug.Log("Next Level");
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+
+    public void MainMenu()
+    {
+        Time.timeScale = 1.0f;
+        SceneManager.LoadScene("MainMenu");
+    }
 }
